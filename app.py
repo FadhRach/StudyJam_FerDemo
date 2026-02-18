@@ -226,7 +226,7 @@ class FERApp:
                 go.Bar(
                     x=models,
                     y=confidences,
-                    text=[f'{emotion}\\n{conf:.1%}' for emotion, conf in zip(emotions, confidences)],
+                    text=[f'{emotion}\n{conf:.1%}' for emotion, conf in zip(emotions, confidences)],
                     textposition='auto',
                     marker_color=['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'][:len(models)]
                 )
